@@ -1,18 +1,12 @@
 import React from 'react';
 
 
-var VideoPlayer = (props) => (
-  <div className="video-player">
-    <h4>{props.video.snippet.title}</h4>
-    <div className="embed-responsive embed-responsive-16by9">
-      <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + props.video.id.videoId } allowFullScreen height="450" width="900"></iframe>
-    </div>
-    <div className="video-player-details">
-
-      {/* <div>{props.video.snippet.description}</div> */}
-    </div>
+const VideoPlayer = (props) => {
+  return (
+  <div id="movie-player" >
+    <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + props.video.videoId } allowFullScreen width="800" height="380"></iframe>
   </div>
-);
+)};
 
 
 export default VideoPlayer;

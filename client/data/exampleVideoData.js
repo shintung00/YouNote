@@ -4,166 +4,229 @@
 
 // let exampleVideoData = [ ];
 
-var exampleVideoData = [{
-  kind: 'youtube#searchResult',
-  etag: 'abQHWywil_AkNqdqji7_FqiK-u4/Ykxo_CqKu8F8kcm-iNgL332gQTY',
-  id: {
-    kind: 'youtube#video',
-    videoId: '4ZAEBxGipoA'
-  },
-  snippet: {
-    publishedAt: '2015-08-02T20:52:58.000Z',
-    channelId: 'UCJbPGzawDH1njbqV-D5HqKw',
-    title: 'React JS Tutorial for Beginners - 1 - Introduction',
-    description: 'My website - https://www.thenewboston.com/videos.php Have questions about the tutorial or React? Ask them here ...',
-    thumbnails: {
-      default: {
-        url: 'https://i.ytimg.com/vi/4ZAEBxGipoA/default.jpg',
-        width: 120,
-        height: 90
-      },
-      medium: {
-        url: 'https://i.ytimg.com/vi/4ZAEBxGipoA/mqdefault.jpg',
-        width: 320,
-        height: 180
-      },
-      high: {
-        url: 'https://i.ytimg.com/vi/4ZAEBxGipoA/hqdefault.jpg',
-        width: 480,
-        height: 360
-      }
+var exampleVideoData = [
+  {
+    "kind": "youtube#searchListResponse",
+    "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/woRGJPItWYKXDW8tn9bHNmkfA_0\"",
+    "regionCode": "US",
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
     },
-    channelTitle: 'thenewboston',
-    liveBroadcastContent: 'none'
-  }
-}, {
-  kind: 'youtube#searchResult',
-  etag: 'abQHWywil_AkNqdqji7_FqiK-u4/tS3xe6KXEJbntCAmn01SmEuSYxg',
-  id: {
-    kind: 'youtube#video',
-    videoId: 'mFEoarLnnqM'
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/xQvwJ67F_meI5k0eqAmruDvLYoc\"",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ixCtHZRFiRQ"
+            },
+            "snippet": {
+                "publishedAt": "2020-02-23T14:45:01.000Z",
+                "channelId": "UCTVVDt-QGxBTOqPOQuK6Y-g",
+                "title": "Greatest Smash 64 Combo Contest Combos",
+                "description": "A compilation of the all-time greatest combos in Smash 64 combo contests! Combo contests are the Smash version of the NBA slam dunk contest, with players ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ixCtHZRFiRQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ixCtHZRFiRQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ixCtHZRFiRQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "GRsmash",
+                "liveBroadcastContent": "none"
+            }
+        }
+    ]
+},
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/Mgp5tVPVw902XCMSCDWJKXbMFWA\"",
+  "regionCode": "US",
+  "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 1
   },
-  snippet: {
-    publishedAt: '2014-08-08T21:31:58.000Z',
-    channelId: 'UCKKQaFUwyPb6iC-42rFRz2Q',
-    title: 'Thinking in React, a step by step screencast tutorial',
-    description: 'A step by step video tutorial that takes you through the correct way of coding Facebook React views. Check out the rest of the tagtree library: http://tagtree.tv.',
-    thumbnails: {
-      default: {
-        url: 'https://i.ytimg.com/vi/mFEoarLnnqM/default.jpg',
-        width: 120,
-        height: 90
-      },
-      medium: {
-        url: 'https://i.ytimg.com/vi/mFEoarLnnqM/mqdefault.jpg',
-        width: 320,
-        height: 180
-      },
-      high: {
-        url: 'https://i.ytimg.com/vi/mFEoarLnnqM/hqdefault.jpg',
-        width: 480,
-        height: 360
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/h8nUcr5krqSQznjEebWvmVvi6eg\"",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "uNGSzTDuK1Y"
+          },
+          "snippet": {
+              "publishedAt": "2020-02-09T22:15:01.000Z",
+              "channelId": "UCTVVDt-QGxBTOqPOQuK6Y-g",
+              "title": "Best Pauses in Super Smash Bros",
+              "description": "A compilation of the absolute sickest, funniest, and most disrespectful pauses in Super Smash Bros! Pausing the game during the killing blow or after a sick ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/uNGSzTDuK1Y/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/uNGSzTDuK1Y/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/uNGSzTDuK1Y/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "GRsmash",
+              "liveBroadcastContent": "none"
+          }
       }
-    },
-    channelTitle: '',
-    liveBroadcastContent: 'none'
-  }
-}, {
-  kind: 'youtube#searchResult',
-  etag: 'abQHWywil_AkNqdqji7_FqiK-u4/FZYrgJg7qfkv0yfImJPujBKBmLk',
-  id: {
-    kind: 'youtube#video',
-    videoId: '0ByoQm-vnYw'
+  ]
+},
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/Bt4eVteAaOJl047jULtXntXuhKc\"",
+  "regionCode": "US",
+  "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 1
   },
-  snippet: {
-    publishedAt: '2015-12-08T20:51:18.000Z',
-    channelId: 'UClLXKYEEM8OBBx85DOa6-cg',
-    title: 'React Tutorial for Beginners',
-    description: 'Get the full course here: http://devslopes.com/react In this video you will learn how to setup your project for React development and you will build a simple React ...',
-    thumbnails: {
-      default: {
-        url: 'https://i.ytimg.com/vi/0ByoQm-vnYw/default.jpg',
-        width: 120,
-        height: 90
-      },
-      medium: {
-        url: 'https://i.ytimg.com/vi/0ByoQm-vnYw/mqdefault.jpg',
-        width: 320,
-        height: 180
-      },
-      high: {
-        url: 'https://i.ytimg.com/vi/0ByoQm-vnYw/hqdefault.jpg',
-        width: 480,
-        height: 360
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/ckMPOmoRzkbTuYLff65u9J91u-M\"",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "GOTX-KpjroI"
+          },
+          "snippet": {
+              "publishedAt": "2019-05-27T19:45:00.000Z",
+              "channelId": "UCTVVDt-QGxBTOqPOQuK6Y-g",
+              "title": "Luckiest Moments in Smash History",
+              "description": "All skill. Whether it's Game & Watch hitting an unexpected 9 hammer (or two!), Luigi misfiring 5 times in a row, Peach pulling an insanely unlikely number of stitch ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/GOTX-KpjroI/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/GOTX-KpjroI/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/GOTX-KpjroI/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "GRsmash",
+              "liveBroadcastContent": "none"
+          }
       }
-    },
-    channelTitle: '',
-    liveBroadcastContent: 'none'
-  }
-}, {
-  kind: 'youtube#searchResult',
-  etag: 'abQHWywil_AkNqdqji7_FqiK-u4/nSaavPWVkTWpn2p-ClwNj7xszf8',
-  id: {
-    kind: 'youtube#video',
-    videoId: 'o5E894TmHJg'
+  ]
+},
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/tl7GPtfBFlCFogWPd6hpOhreHFM\"",
+  "nextPageToken": "CAEQAA",
+  "regionCode": "US",
+  "pageInfo": {
+      "totalResults": 4,
+      "resultsPerPage": 1
   },
-  snippet: {
-    publishedAt: '2015-03-09T08:19:59.000Z',
-    channelId: 'UCMYct3vtNaMwZAA3_DNsWMw',
-    title: 'Flux Tutorial - Writing a Simple App in Flux and React',
-    description: 'Hey! Write something in the comments, even if it\'s critical. I\'d love to hear feedback! (also, please thumbs-up if you like the vid, and I\'ll make more). Personally I ...',
-    thumbnails: {
-      default: {
-        url: 'https://i.ytimg.com/vi/o5E894TmHJg/default.jpg',
-        width: 120,
-        height: 90
-      },
-      medium: {
-        url: 'https://i.ytimg.com/vi/o5E894TmHJg/mqdefault.jpg',
-        width: 320,
-        height: 180
-      },
-      high: {
-        url: 'https://i.ytimg.com/vi/o5E894TmHJg/hqdefault.jpg',
-        width: 480,
-        height: 360
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/75VVv_iACrx6TAbt8HWxC2CLroM\"",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "kT0xHN65ExA"
+          },
+          "snippet": {
+              "publishedAt": "2017-08-02T02:58:59.000Z",
+              "channelId": "UCTVVDt-QGxBTOqPOQuK6Y-g",
+              "title": "Most Controversial Moments in Smash History",
+              "description": "\"THIS IS WHY LEFFEN IS THE MOST HATED MAN ON SMASH BROS\" This is a compilation of some of the most infamous moments in Smash history that were ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/kT0xHN65ExA/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/kT0xHN65ExA/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/kT0xHN65ExA/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "GRsmash",
+              "liveBroadcastContent": "none"
+          }
       }
-    },
-    channelTitle: 'bengrunfeld',
-    liveBroadcastContent: 'none'
-  }
-}, {
-  kind: 'youtube#searchResult',
-  etag: 'abQHWywil_AkNqdqji7_FqiK-u4/3E7u1VZ18KYyfLIA6RgI2w-7nRI',
-  id: {
-    kind: 'youtube#video',
-    videoId: 'Pd6Ub7Ju2RM'
+  ]
+},
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/8-b4uWhM5iOuYewZLnvoJDPe3is\"",
+  "nextPageToken": "CAEQAA",
+  "regionCode": "US",
+  "pageInfo": {
+      "totalResults": 2,
+      "resultsPerPage": 1
   },
-  snippet: {
-    publishedAt: '2015-02-13T18:50:38.000Z',
-    channelId: 'UCr5lOCcjZzNprLrhxO0WZQw',
-    title: 'Learn React, Flux, and Flow: Part I',
-    description: 'Brought to you by Formidable Labs and SeattleJS, Colin Megill walks us through Facebook\'s React framework in part one of this three-part series. The workshop ...',
-    thumbnails: {
-      default: {
-        url: 'https://i.ytimg.com/vi/Pd6Ub7Ju2RM/default.jpg',
-        width: 120,
-        height: 90
-      },
-      medium: {
-        url: 'https://i.ytimg.com/vi/Pd6Ub7Ju2RM/mqdefault.jpg',
-        width: 320,
-        height: 180
-      },
-      high: {
-        url: 'https://i.ytimg.com/vi/Pd6Ub7Ju2RM/hqdefault.jpg',
-        width: 480,
-        height: 360
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "\"SJZWTG6xR0eGuCOh2bX6w3s4F94/D4_Xm-FgcmA9D4H7zrq28Ixt6PI\"",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "Er2mQan11WI"
+          },
+          "snippet": {
+              "publishedAt": "2019-06-08T18:07:38.000Z",
+              "channelId": "UCd5AJwFW4lU_zqIBvVYw0Jg",
+              "title": "Most Salty Moments in Smash Ultimate #4",
+              "description": "Previous Video - Smartest Big Brain Plays #5: https://youtu.be/2uiP1ka5xac Clips are from: https://www.twitch.tv/vgbootcamp https://www.twitch.tv/NESATeam ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/Er2mQan11WI/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/Er2mQan11WI/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/Er2mQan11WI/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Dragon Smash",
+              "liveBroadcastContent": "none"
+          }
       }
-    },
-    channelTitle: '',
-    liveBroadcastContent: 'none'
-  }
-}];
+  ]
+}
+];
 
 export default exampleVideoData;

@@ -1,46 +1,66 @@
 import React from 'react';
-
 import VideoPlayer from './VideoPlayer.jsx';
-// import Search from './Search.jsx';
 import Notes from './Notes.jsx';
-import View from './NotePad.jsx';
+import NotePad from './NotePad.jsx';
+import InformationModal from './InformationModal.jsx';
+import DetailsModal from './DetailsModal.jsx';
+import { Button } from 'react-bootstrap';
+import styled from 'styled-components';
 
-// searchYouTube({ part: 'snippet', key: YOUTUBE_API_KEY, query: 'cats', max: 10, type: 'video', videoEmbeddable: true}, (data) => {
-//   console.log(data);
-// });
+const ColContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  // margin-left: 15px;
+`
+const ColContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+`
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+`
 
-    this.state = {
-      video: this.props.video.videoData,
-      notes: this.props.video.notes,
-      name: this.props.video.name
-      // videos: exampleVideoData,
-      // current: exampleVideoData[0]
-    };
-  }
+const RowContainer2 = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 
-  render() {
-    return (
-      <div>
-        <nav className="navbar">
-          {/* <div className="col-md-6 offset-md-3">
-            <Search click={this.onSearchButtonClick.bind(this)} press={this.inBarSearch.bind(this)}/>
-          </div> */}
-        </nav>
-        <div className="row">
-          <div className="col-md-7">
-            <VideoPlayer video={this.props.video.videoData}/>
-            <Notes note={this.props.video.notes}/>
-            <View />
-          </div>
-        </div>
+const App = (props) => {
+  const [informationShow, setInformationShow] = React.useState(false);
+  const [detailsShow, setDetailsShow] = React.useState(false);
+
+  return (
+    <div>
+      <RowContainer2>
+        <ColContainer2>   
+          <VideoPlayer video={props.video}/>
+          <br />
+          <RowContainer>
+            <ColContainer>
+              <br />
+              <Button variant="outline-danger" className="video-options" onClick={props.delete} size="lg">🗑</Button>
+              <Button variant="outline-primary" className="video-options" onClick={() => setInformationShow(true)} size="lg">ℹ️</Button>
+              <Button variant="outline-primary" className="video-options" onClick={() => setDetailsShow(true)} size="lg">✏️</Button>
+            </ColContainer>
+            <Notes video={props.video} updateNotes={props.updateNotes}/>
+          </RowContainer>
+        </ColContainer2>   
+        <NotePad className="notepad" video={props.video} updateStickies={props.updateStickies}/>
+      </RowContainer2>
+
+
+
+          <InformationModal show={informationShow}video={props.video} onHide={() => setInformationShow(false)}
+          />
+          <DetailsModal show={detailsShow} video={props.video} onHide={() => setDetailsShow(false)} editvideodetail={props.editvideodetail}
+          />
       </div>
-    );
-  }
 
+  )
 }
-
 export default App;
