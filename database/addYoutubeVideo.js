@@ -1,7 +1,7 @@
 const schema = require('./schema.js');
 const { saveVideo } = schema;
 const axios = require('axios');
-const youtubeAPI = require('../youtubeconfig.js');
+const youtubeAPI = require('../client/config/youtubeconfig.js');
 const apikey = youtubeAPI.apikey;
 
 const addYoutubeVideo = (req, res) => {
