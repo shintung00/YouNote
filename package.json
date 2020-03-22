@@ -1,7 +1,7 @@
 {
-  "name": "reviews",
+  "name": "Younote",
   "version": "1.0.0",
-  "description": "reviews module",
+  "description": "video notetaking companion",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Draftbnb/reviews.git"
+    "url": "https://github.com/shintung00/MVP"
   },
   "keywords": [],
-  "author": "Wenhao",
+  "author": "Hsin",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -56,9 +56,5 @@
     "styled-components": "^5.0.1",
     "underscore": "^1.8.3",
     "uuid": "^3.4.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Draftbnb/reviews/issues"
-  },
-  "homepage": "https://github.com/Draftbnb/reviews#readme"
+  }
 }
