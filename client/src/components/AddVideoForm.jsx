@@ -50,7 +50,7 @@ class AddVideoForm extends React.Component {
             <img  src="YouNoteLogo.svg" className="logo"/>
             <br />
             <RowContainer>
-              <input type="text" name="videoURL" size="50"  value={this.state.videoURL} onChange={this.handleChange} onKeyPress={this.keyPressed}placeholder="Paste Youtube Video URL" style={{fontSize:"24px"}}/>
+              <input type="text" name="videoURL" size="50"  value={this.state.videoURL} onChange={this.handleChange} onKeyPress={this.keyPressed} placeholder="Paste Youtube Video URL" style={{fontSize:"24px"}}/>
               <Button variant="outline-dark" onClick={this.handleAdd}>🔍</Button>
             </RowContainer>
           </Container>

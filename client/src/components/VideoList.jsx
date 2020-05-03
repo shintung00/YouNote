@@ -10,7 +10,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   overflow-y: auto;
   height: 640px;
-
+  justify-content: center;
 `
 
 const VideoList = (props) => (
