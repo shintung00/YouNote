@@ -6,6 +6,7 @@ import InformationModal from './InformationModal.jsx';
 import DetailsModal from './DetailsModal.jsx';
 import { Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import TextEditor from './TextEditor.jsx'
 
 const ColContainer = styled.div`
   display: flex;
@@ -47,7 +48,9 @@ const App = (props) => {
               <Button variant="outline-primary" className="video-options" onClick={() => setInformationShow(true)} size="lg">ℹ️</Button>
               <Button variant="outline-primary" className="video-options" onClick={() => setDetailsShow(true)} size="lg">✏️</Button>
             </ColContainer>
-            <Notes video={props.video} updateNotes={props.updateNotes}/>
+            <TextEditor />
+
+            {/* <Notes video={props.video} updateNotes={props.updateNotes}/> */}
           </RowContainer>
         </ColContainer2>   
         <NotePad className="notepad" video={props.video} updateStickies={props.updateStickies}/>
@@ -55,7 +58,7 @@ const App = (props) => {
 
 
 
-          <InformationModal show={informationShow}video={props.video} onHide={() => setInformationShow(false)}
+          <InformationModal show={informationShow} video={props.video} onHide={() => setInformationShow(false)}
           />
           <DetailsModal show={detailsShow} video={props.video} onHide={() => setDetailsShow(false)} editvideodetail={props.editvideodetail}
           />

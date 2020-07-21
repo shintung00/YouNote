@@ -111,6 +111,7 @@ class MainApp extends React.Component {
           this.setState({
             videos: response.data
           });
+          console.log(this.state.videos);
         } 
       })
       .catch((error) => {
