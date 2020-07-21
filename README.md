@@ -1,11 +1,17 @@
 # YouNote - Notetaking Companion
-This repo contains a barebones app using React 16 and Express using Webpack 4 and Babel 7. The react app currently renders a simple Hello World. It can easily be extended by adding more components and routes to make a full-stack app.
+YouNote is a notetaking productivity app used to integrate a text editor and video player. YouNote creates a separate page for each video and allows a seamless integration of a traditional editor and stickynotes so that users can take notes while watching educational and/or self-help videos. 
+
+![](superConnector.gif)
+
+This MVP project was designed and built under 72 hours to illustrate the bare-bone concept. You can find the [full video demo here](https://www.youtube.com/watch?v=KvQkuKVrP70).
+
 
 ## Getting Started
+Prerequisites: Node 6 or above
+
+You can use [nvm](https://github.com/creationix/nvm#installation) to easily switch Node versions.
 
 ### Installation
-
-**You’ll need to have Node >= 6 on your machine**. You can use [nvm](https://github.com/creationix/nvm#installation) to easily switch Node versions between different projects.
 
 ```sh
 npm install
@@ -16,4 +22,12 @@ npm run react-dev
 npm start
 ```
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
+Then open [http://localhost:3000/](http://localhost:3000/) to see the app.<br>
+
+## Built With
+* React 16
+* Webpack 4
+* Babel 7
+* Node.js
+* Express
+
