@@ -1,4 +1,4 @@
-# React-Express Starter
+# YouNote - Notetaking Companion
 This repo contains a barebones app using React 16 and Express using Webpack 4 and Babel 7. The react app currently renders a simple Hello World. It can easily be extended by adding more components and routes to make a full-stack app.
 
 ## Getting Started
